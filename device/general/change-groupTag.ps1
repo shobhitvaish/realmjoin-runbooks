@@ -28,7 +28,8 @@ param (
   [string] $DeviceId,
   [string] $newGroupTag = "",
   [Parameter(Mandatory = $true)]
-  [string]$CallerName 
+  [string]$CallerName,
+  [string] $DeviceName
 )
 
 Write-RjRbLog -Message "Caller: '$CallerName'" -Verbose
