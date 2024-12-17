@@ -38,7 +38,8 @@ param(
     [bool] $Remove = $false,
     # CallerName is tracked purely for auditing purposes
     [Parameter(Mandatory = $true)]
-    [string] $CallerName
+    [string] $CallerName,
+    [string] $GroupName
 )
 
 Write-RjRbLog -Message "Caller: '$CallerName'" -Verbose
