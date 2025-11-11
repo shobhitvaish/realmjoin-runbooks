@@ -62,7 +62,7 @@ param
     [string] $UserName,
     [Parameter(Mandatory = $true)]
     [ValidateScript( { Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process; Use-RJInterface -Type Graph -Entity User -DisplayName "Delegate access to" -Filter "userType eq 'Member'" } )]
-    [string[]] $delegateTo,
+    [string[]] $delegateTo = @("c7a48d9f-e4e5-4add-8be1-d4feb840a5d2"),
     [ValidateScript( { Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process; Use-RJInterface -DisplayName "Remove this delegation" } )]
     [bool] $Remove = $false,
     [ValidateScript( { Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process; Use-RJInterface -DisplayName "Automatically map mailbox in Outlook" } )]
