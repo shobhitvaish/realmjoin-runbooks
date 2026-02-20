@@ -1,6 +1,6 @@
 <#
   .SYNOPSIS
-  Assign a new Auto-pilot GroupTag to this device.
+  Assign a new AutoPilot GroupTag to this deviceAutoPilot GroupTag to this device.
 
   .DESCRIPTION
   Assign a new AutoPilot GroupTag to this device.
@@ -58,3 +58,4 @@ Invoke-RjRbRestMethodGraph -Resource "/deviceManagement/windowsAutopilotDeviceId
 
 
 "## Successfully updated device '$($targetDevice.displayName)'"
+
