@@ -1,6 +1,6 @@
 <#
   .SYNOPSIS
-  Assign a new AutoPilot GroupTag to this device.
+  Assign a new Auto-pilot GroupTag to this device.
 
   .DESCRIPTION
   Assign a new AutoPilot GroupTag to this device.
