@@ -3,7 +3,7 @@ This document combines the permission requirements and RBAC roles with the expos
 
 | Category | Subcategory | Runbook Name | Synopsis | Permissions | RBAC Roles | Parameter | Required | Type | Parameter Description |
 |----------|-------------|--------------|----------|-------------|------------|-----------|----------|------|-----------------------|
-| Device | General | Change Grouptag | Assign a new AutoPilot GroupTag to this device. | - **Type**: Microsoft Graph<br>&emsp;- Device.Read.All<br>&emsp;- DeviceManagementServiceConfig.ReadWrite.All<br> |  | DeviceId | ✓ | String |  |
+| Device | General | Change Grouptag | Assign a new Auto-pilot GroupTag to this device. | - **Type**: Microsoft Graph<br>&emsp;- Device.Read.All<br>&emsp;- DeviceManagementServiceConfig.ReadWrite.All<br> |  | DeviceId | ✓ | String |  |
 |  |  |  |  |  |  | newGroupTag |  | String |  |
 |  |  |  |  |  |  | CallerName | ✓ | String |  |
 |  |  | Check Updatable Assets | Check if a device is onboarded to Windows Update for Business. | - **Type**: Microsoft Graph<br>&emsp;- WindowsUpdates.ReadWrite.All<br> |  | CallerName | ✓ | String | Caller name for auditing purposes. |

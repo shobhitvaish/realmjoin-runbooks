@@ -43,7 +43,7 @@ Each category contains multiple runbooks that are further divided into subcatego
 ## General
 | Runbook Name | Synopsis |
 |--------------|----------|
-| Change Grouptag | Assign a new AutoPilot GroupTag to this device. |
+| Change Grouptag | Assign a new Auto-pilot GroupTag to this device. |
 | Check Updatable Assets | Check if a device is onboarded to Windows Update for Business. |
 
 [Back to the RealmJoin runbook overview](#table-of-contents)

@@ -3,7 +3,7 @@ This document provides a comprehensive overview of all runbooks currently availa
 
 | Category | Subcategory | Runbook Name | Synopsis |
 |----------|-------------|--------------|----------|
-| Device | General | Change Grouptag | Assign a new AutoPilot GroupTag to this device. |
+| Device | General | Change Grouptag | Assign a new Auto-pilot GroupTag to this device. |
 |  |  | Check Updatable Assets | Check if a device is onboarded to Windows Update for Business. |
 |  | Security | Enable Or Disable Device | Disable a device in AzureAD. |
 |  |  | Isolate Or Release Device | Isolate this device. |

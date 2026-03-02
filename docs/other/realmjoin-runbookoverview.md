@@ -47,7 +47,7 @@ Each category contains multiple runbooks that are further divided into subcatego
 <a name='device-general-change-grouptag'></a>
 
 ### Change Grouptag
-#### Assign a new AutoPilot GroupTag to this device.
+#### Assign a new Auto-pilot GroupTag to this device.
 
 #### Description
 Assign a new AutoPilot GroupTag to this device.
