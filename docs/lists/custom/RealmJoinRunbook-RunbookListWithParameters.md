@@ -34,6 +34,12 @@ This document combines the permission requirements and RBAC roles with the expos
 |  |  | Show Or Hide In Address Book | (Un)hide an O365- or static Distribution-group in Address Book. | - **Type**: Office 365 Exchange Online<br>&emsp;- Exchange.ManageAsApp<br> | - Exchange administrator<br> | GroupName | ✓ | String |  |
 |  |  |  |  |  |  | Action |  | Int32 |  |
 |  |  |  |  |  |  | CallerName | ✓ | String | CallerName is tracked purely for auditing purposes |
+| Organization | Guest-lifecycle | Import Guest Inviters As Sponsors | Set the guest inviter as sponsor for guest users. |  |  | UserIds |  | String Array | User Principal Name or Object ID of specific guest user(s) to process. If not provided, all invited guests will be processed. |
+|  |  |  |  |  |  | SponsorInclusionGroupId |  | String | If provided, only users who are members of this security group are allowed to be assigned as guest sponsors. |
+|  |  |  |  |  |  | SponsorExclusionGroupId |  | String | If provided, users who are members of this security group are excluded from being assigned as guest sponsors. |
+|  |  |  |  |  |  | CsvDelimiter |  | String | The delimiter to use in the CSV output. Default is ";". |
+|  |  |  |  |  |  | DryRun |  | Boolean | If enabled, the guest invitations are checked but the guest user objects are not modified. |
+|  |  |  |  |  |  | CallerName | ✓ | String | CallerName is tracked purely for auditing purposes |
 | User | General | Assign Groups By Template | Assign cloud-only groups to a user based on a predefined template. |  |  | UserId | ✓ | String |  |
 |  |  |  |  |  |  | GroupsTemplate |  | String | GroupsTemplate is not used directly, but is used to populate the GroupsString parameter via RJ Portal Customization |
 |  |  |  |  |  |  | GroupsString | ✓ | String |  |

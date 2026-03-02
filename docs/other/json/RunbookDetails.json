@@ -703,6 +703,125 @@
     }
   },
   {
+    "RunbookDisplayName": "Import Guest Inviters As Sponsors",
+    "RunbookDisplayPath": "Org \\ Guest Lifecycle \\ Import Guest Inviters As Sponsors",
+    "RelativeRunbookPath": "org/guest-lifecycle/import-guest-inviters-as-sponsors.ps1",
+    "RelativeRunbookPath_PathOnly": "org/guest-lifecycle",
+    "PrimaryFolder": "Org",
+    "SubFolder": "Guest-lifecycle",
+    "Synopsis": "Set the guest inviter as sponsor for guest users.",
+    "Description": "Updates the Sponsors attribute to include the user who initially invited the guest to the tenant using the InvitedBy property.\nThis script can be used to backfill Sponsors attribute for existing guest users who don't have sponsors assigned yet.",
+    "Notes": "This script is based on the following approach:\nhttps://github.com/AzureAD/MSIdentityTools/blob/main/src/Update-MsIdInvitedUserSponsorsFromInvitedBy.ps1",
+    "Parameters": [
+      {
+        "defaultValue": "",
+        "description": [
+          {
+            "Text": "CallerName is tracked purely for auditing purposes"
+          }
+        ],
+        "globbing": "false",
+        "name": "CallerName",
+        "parameterValue": "String",
+        "pipelineInput": "false",
+        "position": "6",
+        "required": "true",
+        "type": {
+          "name": "String"
+        }
+      },
+      {
+        "defaultValue": ";",
+        "description": [
+          {
+            "Text": "The delimiter to use in the CSV output. Default is \";\"."
+          }
+        ],
+        "globbing": "false",
+        "name": "CsvDelimiter",
+        "parameterValue": "String",
+        "pipelineInput": "false",
+        "position": "4",
+        "required": "false",
+        "type": {
+          "name": "String"
+        }
+      },
+      {
+        "defaultValue": "False",
+        "description": [
+          {
+            "Text": "If enabled, the guest invitations are checked but the guest user objects are not modified."
+          }
+        ],
+        "globbing": "false",
+        "name": "DryRun",
+        "parameterValue": "Boolean",
+        "pipelineInput": "false",
+        "position": "5",
+        "required": "false",
+        "type": {
+          "name": "Boolean"
+        }
+      },
+      {
+        "defaultValue": "",
+        "description": [
+          {
+            "Text": "If provided, users who are members of this security group are excluded from being assigned as guest sponsors."
+          }
+        ],
+        "globbing": "false",
+        "name": "SponsorExclusionGroupId",
+        "parameterValue": "String",
+        "pipelineInput": "false",
+        "position": "3",
+        "required": "false",
+        "type": {
+          "name": "String"
+        }
+      },
+      {
+        "defaultValue": "",
+        "description": [
+          {
+            "Text": "If provided, only users who are members of this security group are allowed to be assigned as guest sponsors."
+          }
+        ],
+        "globbing": "false",
+        "name": "SponsorInclusionGroupId",
+        "parameterValue": "String",
+        "pipelineInput": "false",
+        "position": "2",
+        "required": "false",
+        "type": {
+          "name": "String"
+        }
+      },
+      {
+        "defaultValue": "",
+        "description": [
+          {
+            "Text": "User Principal Name or Object ID of specific guest user(s) to process. If not provided, all invited guests will be processed."
+          }
+        ],
+        "globbing": "false",
+        "name": "UserIds",
+        "parameterValue": "String[]",
+        "pipelineInput": "false",
+        "position": "1",
+        "required": "false",
+        "type": {
+          "name": "String[]"
+        }
+      }
+    ],
+    "DocsContent": null,
+    "DocsContentEncoded": null,
+    "PermissionsContent": null,
+    "PermissionsJson": null
+  },
+  {
     "RunbookDisplayName": "Assign Groups By Template",
     "RunbookDisplayPath": "User \\ General \\ Assign Groups By Template",
     "RelativeRunbookPath": "user/general/assign-groups-by-template.ps1",

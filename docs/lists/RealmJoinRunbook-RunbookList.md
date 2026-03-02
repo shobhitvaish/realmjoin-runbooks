@@ -26,6 +26,9 @@ Each category contains multiple runbooks that are further divided into subcatego
   - [Mail](#group-mail)
     - Enable Or Disable External Mail
     - Show Or Hide In Address Book
+- [Organization](#organization)
+  - [Guest-lifecycle](#organization-guest-lifecycle)
+    - Import Guest Inviters As Sponsors
 - [User](#user)
   - [General](#user-general)
     - Assign Groups By Template
@@ -75,6 +78,16 @@ Each category contains multiple runbooks that are further divided into subcatego
 |--------------|----------|
 | Enable Or Disable External Mail | Enable/disable external parties to send eMails to O365 groups. |
 | Show Or Hide In Address Book | (Un)hide an O365- or static Distribution-group in Address Book. |
+
+[Back to the RealmJoin runbook overview](#table-of-contents)
+
+<a name='organization'></a>
+# Organization
+<a name='organization-guest-lifecycle'></a>
+## Guest-lifecycle
+| Runbook Name | Synopsis |
+|--------------|----------|
+| Import Guest Inviters As Sponsors | Set the guest inviter as sponsor for guest users. |
 
 [Back to the RealmJoin runbook overview](#table-of-contents)
 

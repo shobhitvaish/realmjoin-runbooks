@@ -26,6 +26,9 @@ Each category contains multiple runbooks that are further divided into subcatego
   - [Mail](#group-mail)
     - [Enable Or Disable External Mail](#group-mail-enable-or-disable-external-mail)
     - [Show Or Hide In Address Book](#group-mail-show-or-hide-in-address-book)
+- [Organization](#organization)
+  - [Guest-lifecycle](#organization-guest-lifecycle)
+    - [Import Guest Inviters As Sponsors](#organization-guest-lifecycle-import-guest-inviters-as-sponsors)
 - [User](#user)
   - [General](#user-general)
     - [Assign Groups By Template](#user-general-assign-groups-by-template)
@@ -160,6 +163,27 @@ Enable/disable external parties to send eMails to O365 groups.
 |-----------|----------|------|-------------|
 | GroupName | ✓ | String |  |
 | Action |  | Int32 |  |
+| CallerName | ✓ | String | CallerName is tracked purely for auditing purposes |
+
+[Back to the RealmJoin runbook parameter overview](#table-of-contents)
+
+<a name='organization'></a>
+# Organization
+<a name='organization-guest-lifecycle'></a>
+## Guest-lifecycle
+
+<a name='organization-guest-lifecycle-import-guest-inviters-as-sponsors'></a>
+
+### Import Guest Inviters As Sponsors
+Set the guest inviter as sponsor for guest users.
+
+| Parameter | Required | Type | Description |
+|-----------|----------|------|-------------|
+| UserIds |  | String Array | User Principal Name or Object ID of specific guest user(s) to process. If not provided, all invited guests will be processed. |
+| SponsorInclusionGroupId |  | String | If provided, only users who are members of this security group are allowed to be assigned as guest sponsors. |
+| SponsorExclusionGroupId |  | String | If provided, users who are members of this security group are excluded from being assigned as guest sponsors. |
+| CsvDelimiter |  | String | The delimiter to use in the CSV output. Default is ";". |
+| DryRun |  | Boolean | If enabled, the guest invitations are checked but the guest user objects are not modified. |
 | CallerName | ✓ | String | CallerName is tracked purely for auditing purposes |
 
 [Back to the RealmJoin runbook parameter overview](#table-of-contents)

@@ -12,6 +12,7 @@ This document provides a comprehensive overview of all runbooks currently availa
 |  |  | Add Or Remove User | Add/remove users to/from a group. |
 |  | Mail | Enable Or Disable External Mail | Enable/disable external parties to send eMails to O365 groups. |
 |  |  | Show Or Hide In Address Book | (Un)hide an O365- or static Distribution-group in Address Book. |
+| Organization | Guest-lifecycle | Import Guest Inviters As Sponsors | Set the guest inviter as sponsor for guest users. |
 | User | General | Assign Groups By Template | Assign cloud-only groups to a user based on a predefined template. |
 |  |  | Assign Or Unassign License | (Un-)Assign a license to a user via group membership. |
 |  |  | Assign Windows365 | Assign/Provision a Windows 365 instance |

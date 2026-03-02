@@ -27,6 +27,9 @@ Each category contains multiple runbooks that are further divided into subcatego
   - [Mail](#group-mail)
       - [Enable Or Disable External Mail](#enable-or-disable-external-mail)
       - [Show Or Hide In Address Book](#show-or-hide-in-address-book)
+- [Org](#org)
+  - [Guest-lifecycle](#org-guest-lifecycle)
+      - [Import Guest Inviters As Sponsors](#import-guest-inviters-as-sponsors)
 - [User](#user)
   - [General](#user-general)
       - [Assign Groups By Template](#assign-groups-by-template)
@@ -208,6 +211,30 @@ Group \ Mail \ Enable Or Disable External Mail
 
 #### Where to find
 Group \ Mail \ Show Or Hide In Address Book
+
+
+[Back to Table of Content](#table-of-contents)
+
+ 
+ 
+
+<a name='org'></a>
+
+# Org
+<a name='org-guest-lifecycle'></a>
+
+## Guest-lifecycle
+<a name='org-guest-lifecycle-import-guest-inviters-as-sponsors'></a>
+
+### Import Guest Inviters As Sponsors
+#### Set the guest inviter as sponsor for guest users.
+
+#### Description
+Updates the Sponsors attribute to include the user who initially invited the guest to the tenant using the InvitedBy property.
+This script can be used to backfill Sponsors attribute for existing guest users who don't have sponsors assigned yet.
+
+#### Where to find
+Org \ Guest Lifecycle \ Import Guest Inviters As Sponsors
 
 
 [Back to Table of Content](#table-of-contents)

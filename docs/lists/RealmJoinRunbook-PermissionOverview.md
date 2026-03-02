@@ -12,6 +12,7 @@ This document provides an overview of the permissions and RBAC roles required fo
 |  |  | Add Or Remove User | Add/remove users to/from a group. | - **Type**: Microsoft Graph<br>&emsp;- Group.ReadWrite.All<br>&emsp;- Directory.ReadWrite.All<br> |  |
 |  | Mail | Enable Or Disable External Mail | Enable/disable external parties to send eMails to O365 groups. | - **Type**: Office 365 Exchange Online<br>&emsp;- Exchange.ManageAsApp<br> | - Exchange administrator<br> |
 |  |  | Show Or Hide In Address Book | (Un)hide an O365- or static Distribution-group in Address Book. | - **Type**: Office 365 Exchange Online<br>&emsp;- Exchange.ManageAsApp<br> | - Exchange administrator<br> |
+| Organization | Guest-lifecycle | Import Guest Inviters As Sponsors | Set the guest inviter as sponsor for guest users. |  |  |
 | User | General | Assign Groups By Template | Assign cloud-only groups to a user based on a predefined template. |  |  |
 |  |  | Assign Or Unassign License | (Un-)Assign a license to a user via group membership. | - **Type**: Microsoft Graph<br>&emsp;- User.Read.All<br>&emsp;- GroupMember.ReadWrite.All<br>&emsp;- Group.ReadWrite.All<br> |  |
 |  |  | Assign Windows365 | Assign/Provision a Windows 365 instance | - **Type**: Microsoft Graph<br>&emsp;- User.Read.All<br>&emsp;- GroupMember.ReadWrite.All<br>&emsp;- Group.ReadWrite.All<br>&emsp;- User.SendMail<br> |  |

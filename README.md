@@ -41,6 +41,10 @@ Apart from the following runbook descriptions, further content such as runbook o
 
     - [Enable Or Disable External Mail](docs/group/mail/enable-or-disable-external-mail.md)
     - [Show Or Hide In Address Book](docs/group/mail/show-or-hide-in-address-book.md)
+- [Org](docs/org/README.md)
+  - [Guest-lifecycle](docs/org/README.md#org-guest-lifecycle)
+
+    - [Import Guest Inviters As Sponsors](docs/org/guest-lifecycle/import-guest-inviters-as-sponsors.md)
 - [User](docs/user/README.md)
   - [General](docs/user/README.md#user-general)
 
